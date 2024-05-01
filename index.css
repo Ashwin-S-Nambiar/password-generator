@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    background: #1F2937;
+    
+}
+
+.passwd-container {
+    width: 550px;
+    height: 550px;
+    margin-top: 115px;
+    margin-left: 52px;
+}
+
+#main-h1 {
+    font-size: 40px;
+    color: #4ADF86;
+    line-height: 40px;
+    font-weight: 800px;
+}
+
+#color-h1 {
+    color: #FFFFFF;
+}
+
+#main-h2 {
+    margin-top: -22px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #D5D4D8;
+}
+
+#generate-pwd {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: #FFFFFF;
+    background: #10B981;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+hr {
+    height: 2px;
+    width: 81%;
+    background: #2F3E53;
+    border: none;
+}    
+
+#pwd-1 {
+    margin-right: 20px;
+}
+
+#pwd-1, #pwd-2 {
+    color: #55F991;
+    margin-top: 35px;
+    width: 211px;
+    height: 39px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #273549;
+    border: none;
+    border-radius: 6px;
+}
