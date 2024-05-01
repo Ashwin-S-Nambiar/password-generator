@@ -1,7 +1,7 @@
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 let len = characters.length
-let chSize = 15
+let chSize = document.getElementById("pwd-length")
 let generateBtn = document.getElementById("generate-pwd")
 let pwd1Btn = document.getElementById("pwd-1")
 let pwd2Btn = document.getElementById("pwd-2")
@@ -9,11 +9,11 @@ let pwd2Btn = document.getElementById("pwd-2")
 function generatePwd() {
     let pwd1 = ""
     let pwd2 = ""
-    for(let i = 0; i < chSize; i++) {
+    for(let i = 0; i < chSize.value; i++) {
         let r = Math.floor(Math.random() * len)
         pwd1 += characters[r]
     }
-    for(let i = 0; i < chSize; i++) {
+    for(let i = 0; i < chSize.value; i++) {
         let r = Math.floor(Math.random() * len)
         pwd2 += characters[r]
     }
