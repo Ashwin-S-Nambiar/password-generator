@@ -101,3 +101,10 @@ label {
     padding-right: 15px;    
     color: #FFFFFF;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-left: 100px;
+        zoom: 60%;
+    }
+}
