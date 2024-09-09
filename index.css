@@ -1,24 +1,28 @@
 body {
     margin: 0;
+    padding: 1em;
     font-family: "Karla", sans-serif;
     background: #1F2937;
     
 }
 
 .passwd-container {
-    width: 550px;
-    height: 550px;
-    margin-top: 180px;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #main-h1 {
-    font-size: 40px;
+    padding-bottom: 0.4rem;
+    margin: 0;
+    font-size: 2rem;
     color: #4ADF86;
-    line-height: 40px;
-    font-weight: 800px;
+    line-height: 30px;
+    font-weight: 800;
     font-weight: bold;
 }
 
@@ -27,51 +31,74 @@ body {
 }
 
 #main-h2 {
-    margin-top: -22px;
-    font-size: 20px;
-    line-height: 28px;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 20px;
     font-weight: normal;
     color: #D5D4D8;
-    font-weight: normal;
+}
+
+.main-btns {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
 }
 
 #generate-pwd {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-right: auto;
     color: #FFFFFF;
     background: #10B981;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 8px 8px;
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    font-size: 1rem;
+}
+
+label {
+    margin-right: 5px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#pwd-length {
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    height: 39px;
+    width: 50px;
+    padding: 6px 8px;   
+    text-indent: 4px;
+    color: #FFFFFF;
 }
 
 hr {
     height: 2px;
-    width: 81%;
+    width: 100%;
     background: #2F3E53;
     border: none;
 }    
 
-#pwd-1 {
-    margin-right: 20px;
+.password-btn {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
 }
 
 #pwd-1, #pwd-2 {
     color: #55F991;
-    margin-top: 35px;
-    width: 211px;
+    width: 50%;
     height: 39px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 4px 15px;
     background: #273549;
     border: none;
     border-radius: 6px;
+    font-size: 1rem;
 }
 
 #generate-pwd:hover {
@@ -82,29 +109,123 @@ hr {
     background: #000000;
 } 
 
-label {
-    color: #ffffff;
-    font-weight: bold;
-    margin-left: 65px;
-    margin-right: 5px;
-}
 
-#pwd-length {
-    background-color: #273549;
-    border: none;
-    border-radius: 6px;
-    height: 39px;
-    width: 50px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 15px;
-    padding-right: 15px;    
-    color: #FFFFFF;
-}
+/* xs */
+@media (min-width: 475px) {
 
-@media only screen and (max-width: 600px) {
-    body {
-        margin-left: 100px;
-        zoom: 60%;
+    .passwd-container {
+        width: 445px;
     }
+
+    #main-h1 {
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+        line-height: 35px;
+    }
+
+    #main-h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-btns {
+        margin: 2rem 0;
+    }
+
+    #generate-pwd {
+        font-size: 1.25rem;
+        padding: 10px 10px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+    
+    hr {
+        height: 4px;
+    }
+
+    #pwd1, #pwd2 {
+        font-size: 1.25rem;
+    }
+
 }
+
+/* sm */
+@media (min-width: 640px) {
+
+    .passwd-container {
+        width: 600px;
+    }
+
+    #main-h1 {
+        padding-bottom: 1rem;
+        font-size: 2.75rem;
+        line-height: 40px;
+    }
+
+    #main-h2 {
+        font-size: 1.75rem;
+    }
+
+    .main-btns {
+        margin: 2rem 0;
+    }
+
+    #generate-pwd {
+        font-size: 1.5rem;
+        padding: 10px 10px;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
+    
+    hr {
+        height: 4px;
+    }
+
+    #pwd1, #pwd2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+
+    .passwd-container {
+        width: 900px;
+    }
+
+    #main-h1 {
+        line-height: 45px;
+    }
+
+    #main-h2 {
+        font-size: 1.75rem;
+    }
+
+    #generate-pwd {
+        font-size: 1.5rem;
+        padding: 10px 10px;
+    }
+
+    label {
+        font-size: 1.5rem;
+        margin-right: 8px;
+    }
+
+    #pwd1, #pwd2 {
+        font-size: 2rem;
+    }
+
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
