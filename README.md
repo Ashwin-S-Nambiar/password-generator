@@ -1,8 +1,16 @@
-# Password Generator
-A password generator, generates 2 random passwords based on the password size provided by the user and copy them when you click on one of them.
+# 🛒 Password Generator
 
+Live: https://pwrd-generator.netlify.app/
 
-![image](https://github.com/Ashwin-S-Nambiar/password-generator-js/assets/76719333/52027e61-bbf9-407c-b950-29380a3f4e02)
+***A password generator, generates two random passwords based on the password size provided by the user and copy them when you click on one of them.***
 
+## ⚒️ Built with:
+- HTML 5
+- CSS 3
+- JavaScript
 
-![image](https://github.com/Ashwin-S-Nambiar/password-generator-js/assets/76719333/b66d0a78-8e0e-4584-9f52-1af36dfc759f)
+## 📷 Screenshots:
+
+![pwrd-generator netlify app_](https://github.com/user-attachments/assets/b7b45a67-042d-4b01-a4b4-ad25ff4dd334)
+
+![pwrd-generator netlify app_ (1)](https://github.com/user-attachments/assets/c104e254-fb8f-4a91-991b-362f1bbefb41)
