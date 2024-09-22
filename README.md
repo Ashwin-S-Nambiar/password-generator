@@ -1,4 +1,4 @@
-# 🛒 Password Generator
+# 🔑 Password Generator
 
 Live: https://pwrd-generator.netlify.app/
 
