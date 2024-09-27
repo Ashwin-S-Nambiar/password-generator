@@ -1,6 +1,6 @@
 # 🔑 Password Generator
 
-Live: https://pwrd-generator.netlify.app/
+**Live: https://pwrd-generator.netlify.app/**
 
 ***A password generator, generates two random passwords based on the password size provided by the user and copy them when you click on one of them.***
 
